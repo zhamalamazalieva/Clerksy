@@ -6,19 +6,11 @@
     align-items: center;
   }
   &__title {
-    font-family: "Josefin Sans", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    color: $color-white;
+    @include font($color-white, 48px, 600, $font-jose);
     margin: 120px 0 20px;
   }
   &__description {
-    font-family: "Noto Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
+    @include font($color-white, 18px, normal, $font-noto);
     color: $color-white;
   }
   &__img {
