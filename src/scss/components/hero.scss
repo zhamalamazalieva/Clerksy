@@ -17,4 +17,21 @@
     position: absolute;
     bottom: 0;
   }
+  .star--big{
+    position: absolute;
+    top:5%;
+    right: 70%;
+    animation: fades 1s infinite;
+    transition: 0.4s;
+    display: none;
+    @keyframes fades{
+      0%{
+        display: none;
+      }
+      100%{
+        display: block;
+        // width:0px;   
+         }
+    }
+  }
 }

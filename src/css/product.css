@@ -1,0 +1,5 @@
+@media screen and (max-width: 750px) {
+  .product__item {
+    margin-bottom: 20px;
+  }
+}
