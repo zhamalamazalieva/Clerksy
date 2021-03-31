@@ -110,6 +110,8 @@ a {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .row {
@@ -212,32 +214,51 @@ a {
   bottom: 0;
 }
 
-.hero .star--big {
+.hero .star--big,
+.hero .star--orange,
+.hero .star--pink,
+.hero .star--yellow {
   position: absolute;
+  -webkit-animation: fades 1s infinite backwards;
+          animation: fades 1s infinite backwards;
+  opacity: 1;
+}
+
+.hero .star--big {
   top: 5%;
   right: 70%;
-  -webkit-animation: fades 1s infinite;
-          animation: fades 1s infinite;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  display: none;
+}
+
+.hero .star--orange {
+  top: 12%;
+  right: 5%;
+}
+
+.hero .star--pink {
+  bottom: 12%;
+  left: 5%;
+}
+
+.hero .star--yellow {
+  top: 19%;
+  right: 15%;
 }
 
 @-webkit-keyframes fades {
   0% {
-    display: none;
+    opacity: 1;
   }
   100% {
-    display: block;
+    opacity: 0;
   }
 }
 
 @keyframes fades {
   0% {
-    display: none;
+    opacity: 1;
   }
   100% {
-    display: block;
+    opacity: 0;
   }
 }
 
@@ -322,7 +343,7 @@ a {
 }
 
 .product__row {
-  margin: 0 -100px;
+  margin: 0 -70px;
 }
 
 .product__item {
@@ -353,6 +374,43 @@ a {
   margin: 4px 0;
 }
 
+.employee {
+  padding: 115px 0 140px;
+  background-color: #F2EFE6;
+}
+
+.employee__title {
+  color: #163A24;
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.employee__description {
+  text-align: center;
+  margin: 25px auto 5px;
+  max-width: 740px;
+  line-height: 1.5;
+  color: #163A24;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.employee__img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .col-5, .col-7 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .col-5, .col-7, .col-6, .col-3 {
     width: 100%;
@@ -360,6 +418,10 @@ a {
 }
 
 @media screen and (max-width: 1100px) {
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .container {
     padding: 0 30px;
     -webkit-box-sizing: border-box;
@@ -387,18 +449,17 @@ a {
 
 @media screen and (max-width: 1100px) {
   .hero {
-    height: 75vh;
+    height: 80vh;
   }
-  .hero__title {
-    font-size: 48px;
-    margin: 120px 0 20px;
-  }
-  .hero__description {
-    font-size: 18px;
+  .hero__text {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
   }
   .hero__img {
-    position: absolute;
-    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 

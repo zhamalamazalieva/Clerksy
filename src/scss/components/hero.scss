@@ -17,21 +17,36 @@
     position: absolute;
     bottom: 0;
   }
-  .star--big{
+  .star--big,
+  .star--orange,
+  .star--pink,
+  .star--yellow {
     position: absolute;
-    top:5%;
+    animation: fades 1s infinite backwards;
+    opacity: 1;
+  }
+  .star--big {
+    top: 5%;
     right: 70%;
-    animation: fades 1s infinite;
-    transition: 0.4s;
-    display: none;
-    @keyframes fades{
-      0%{
-        display: none;
-      }
-      100%{
-        display: block;
-        // width:0px;   
-         }
+  }
+  .star--orange {
+    top: 12%;
+    right: 5%;
+  }
+  .star--pink {
+    bottom: 12%;
+    left: 5%;
+  }
+  .star--yellow {
+    top: 19%;
+    right: 15%;
+  }
+  @keyframes fades {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }
