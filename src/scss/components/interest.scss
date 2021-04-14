@@ -1,6 +1,9 @@
 .interest{
     padding: 120px 0;
     background-color: $color-milk;
+    &__row{
+        margin: 0 -20px;
+    }
     &__title{
         text-align: center;
     }
@@ -22,9 +25,17 @@
     }
     &__item{
         box-shadow: 5px 5px 20px 0 #E9E4D5;
-        background-color: #FBFAF7;
+        background-color: $color-white;
         padding: 50px 40px;
         border-radius: 15px;
+        margin: 0 20px;
+        transition: 0.4s;
+        &:hover{
+            margin-top: 25px;
+        }
+    }
+    &__icon{
+        margin: 0 auto;
     }
     &__link{
         @include font($color-green, 16px, normal, $font-noto);

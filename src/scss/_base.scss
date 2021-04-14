@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section__title{
+    @include font($color-green, 48px, 600, $font-jose);
+    
+}
+.btn{
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px 25px;
+    border-radius: 160px;
+    background-color: $color-lightGreen;
+    @include font($color-white, 16px, normal, $font-noto);
+    transition: 0.4s;
+    &:hover{
+        border: 2px solid $color-lightGreen;
+        color: $color-lightGreen;
+        background-color: transparent;
+    }
+}
+

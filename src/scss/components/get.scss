@@ -1,0 +1,28 @@
+.get{
+    padding: 115px 0;
+    background-image: url('../img/png/get.png');
+    background-position: center;
+    background-size: cover;
+
+    &__title{
+       color:$color-white;
+    }
+    &__description{
+        margin: 25px 0 18px;
+        color: $color-white;
+    }
+    &__content{
+        @include flex-center();
+        flex-direction: column;
+    }
+    &__btn{
+        background-color: #FAB5A0;
+        color: $color-green;
+        &:hover{
+            border: 2px solid #FAB5A0;
+            background-color: transparent;
+            color: #FAB5A0;
+        }
+    }
+
+}

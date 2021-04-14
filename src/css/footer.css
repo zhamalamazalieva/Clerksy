@@ -1,0 +1,14 @@
+.footer__top {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item {
+  margin-left: 20px;
+}

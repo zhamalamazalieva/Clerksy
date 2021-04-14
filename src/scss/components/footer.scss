@@ -1,0 +1,25 @@
+.footer{
+    &__top{
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin-left: 20px;
+        @include font($color-lightGreen, 14px, normal, $font-noto);
+    }
+    &__text{
+        @include font($color-green, 24px, 600, $font-jose);
+
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0;
+        border-top: 1px solid $color-bg;
+    }
+}

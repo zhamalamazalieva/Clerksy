@@ -1,0 +1,12 @@
+.date {
+  padding: 55px 0 75px;
+}
+
+.date__form {
+  width: 100%;
+}
+
+.date__input {
+  width: 100%;
+  min-height: 54px;
+}
